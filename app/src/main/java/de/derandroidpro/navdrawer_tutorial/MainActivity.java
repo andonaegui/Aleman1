@@ -8,11 +8,16 @@ import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 public class MainActivity extends Activity {
 
 	public DrawerLayout drawerlayout;
 	public ActionBarDrawerToggle drawertoggle;
+
+	public ListView drawerlist;
+	public String[] listentxt = {"Angular 1", "Angular 2", "Angular 3", "Angular123"};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +31,10 @@ public class MainActivity extends Activity {
 		ActionBar dieactionbar = getActionBar();
 		dieactionbar.setHomeButtonEnabled(true);
 		dieactionbar.setDisplayHomeAsUpEnabled(true);
+
+		drawerlist = (ListView) findViewById(R.id.drawerliste);
+		ArrayAdapter<String> drawerlistadapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listentxt);
+		drawerlist.setAdapter(drawerlistadapter);
 	}
 	
 	@Override
