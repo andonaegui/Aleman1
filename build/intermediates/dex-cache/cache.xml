@@ -1,3 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\Wolf\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="24.0.2"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\Wolf\AndroidStudioProjects\Downloaded\Dynamic Drawers\Aleman1\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0_28c78a3d1e9682e31450a76bd1e35054708a0583.jar" />
+    </item>
+
+</items>
